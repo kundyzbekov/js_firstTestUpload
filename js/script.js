@@ -44,7 +44,7 @@ for(let i=5; i<11;i++){
 }
 for(let i=20; i>=10; i--){
     console.log(i);
-    if(i==13)
+    if(i===13)
         break;
 }
 for(let i=2; i<11; i++){
@@ -52,11 +52,22 @@ for(let i=2; i<11; i++){
         console.log(i);
 }
 let i = 2;
-while(i<17){
-    if(i%2===0){
-        continue;
-    } else {
-        console.log(i);
-    }
+while(i<16){
     i++;
+    if(i%2===0)
+        continue;
+    
+        console.log(i);
+    
+    
 }
+
+const arrayOfNumbers = [];
+
+    let j = 5;
+    for(let i=0; i<6;i++){
+        arrayOfNumbers[i] = j++;
+
+    }
+    console.log(arrayOfNumbers);
+    return arrayOfNumbers;
